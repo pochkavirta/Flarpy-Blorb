@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: -1920
-    y: 53
+    x: 0
+    y: 43
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 503, y: 321}
   m_MaxSize: {x: 16192, y: 12117}
   vertical: 0
-  controlID: 20
+  controlID: 29
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: PlasticWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -121,15 +121,15 @@ MonoBehaviour:
     y: 581
     width: 1465
     height: 406
-  m_MinSize: {x: 601, y: 371}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 13}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 19}
   - {fileID: 13}
-  m_Selected: 2
-  m_LastSelected: 1
+  m_Selected: 0
+  m_LastSelected: 2
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 321}
   m_MaxSize: {x: 8096, y: 12117}
   vertical: 1
-  controlID: 21
+  controlID: 66
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 22
+  controlID: 16
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -298,8 +298,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -455
-    y: 83
+    x: 1465
+    y: 73
     width: 454
     height: 966
   m_ViewDataDictionary: {fileID: 0}
@@ -314,9 +314,9 @@ MonoBehaviour:
   currentTrackingStatusHasUpdate: 0
   currentStatusEntriesHasUpdate: 0
   repositoryProgressHasUpdate: 0
-  appManagerProgressHasUpdate: 0
-  changeTab: 5
-  activeTab: 5
+  appManagerProgressHasUpdate: 1
+  changeTab: 3
+  activeTab: 3
   initProjectView:
     hasCompletedInitialCheck: 1
     isUserDataPresent: 1
@@ -385,10 +385,21 @@ MonoBehaviour:
       folders:
         keys:
         - Remote branches
+        - origin
         values:
         - path: Remote branches
           label: Remote branches
           level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+        - path: origin
+          label: origin
+          level: 1
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
@@ -415,6 +426,26 @@ MonoBehaviour:
         isActive: 0
         treeIsCheckable: 0
         checkState: 0
+      - path: origin
+        label: origin
+        level: 1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin/master
+        label: master
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
       selectedNode:
         path: 
         label: 
@@ -432,14 +463,14 @@ MonoBehaviour:
     disableDelete: 1
     disableCreate: 1
     lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 2025-07-28T02:00:18.199+03:00
+      updatedTimeString: 2025-07-28T06:08:58.501+03:00
       cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2025-07-28T02:00:18.529+03:00
+      updatedTimeString: 2025-07-28T06:08:58.507+03:00
       cacheType: 1
     currentBranch:
       name: master
-      tracking: 
+      tracking: origin/master
     currentRemote:
       name: origin
       url: https://github.com/pochkavirta/Flarpy-Blorb.git
@@ -450,12 +481,14 @@ MonoBehaviour:
       token: 
     localBranches:
     - name: master
-      tracking: 
-    remoteBranches: []
+      tracking: origin/master
+    remoteBranches:
+    - name: origin/master
+      tracking: '[None]'
   changesView:
-    currentBranchHasUpdate: 0
-    currentStatusEntriesHasUpdate: 0
-    currentLocksHasUpdate: 0
+    currentBranchHasUpdate: 1
+    currentStatusEntriesHasUpdate: 1
+    currentLocksHasUpdate: 1
     commitBody: 
     commitMessage: 
     currentBranch: master
@@ -465,27 +498,8 @@ MonoBehaviour:
         keys: []
         values: []
       folders:
-        keys:
-        - .plastic
-        values:
-        - path: .plastic
-          label: .plastic
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
+        keys: []
+        values: []
       checkedFileNodes:
         keys: []
         values: []
@@ -514,42 +528,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: .plastic
-        label: .plastic
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: .plastic\plastic.wktree
-        label: plastic.wktree
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: .plastic\plastic.wktree
-          fullPath: C:\Users\user\Flarpy Blorb\.plastic\plastic.wktree
-          projectPath: .plastic\plastic.wktree
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 3
       selectedNode:
         path: 
         label: 
@@ -569,27 +547,81 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-    gitStatusEntries:
-    - path: .plastic\plastic.wktree
-      fullPath: C:\Users\user\Flarpy Blorb\.plastic\plastic.wktree
-      projectPath: .plastic\plastic.wktree
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
-    changedFilesText: 1 changed file
+    gitStatusEntries: []
+    changedFilesText: No changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2025-07-28T02:00:18.529+03:00
+      updatedTimeString: 2025-07-28T06:34:43.938+03:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2025-07-28T02:00:55.673+03:00
+      updatedTimeString: 2025-07-28T06:46:45.083+03:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2025-07-28T06:13:20.391+03:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
+    - commitID: 4eb7229abafdb3b4d30bbed706fd294238ad38c9
+      mergeA: 
+      mergeB: 
+      authorName: PochkaVirta
+      authorEmail: cyberdog771@gmail.com
+      commitEmail: cyberdog771@gmail.com
+      commitName: PochkaVirta
+      summary: Add bird
+      description: 
+      timeString: 2025-07-28T06:08:44.000+03:00
+      commitTimeString: 2025-07-28T06:08:44.000+03:00
+      changes:
+      - path: .plastic\plastic.selector
+        fullPath: C:\Users\user\Flarpy Blorb\.plastic\plastic.selector
+        projectPath: .plastic\plastic.selector
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: .plastic\plastic.wktree
+        fullPath: C:\Users\user\Flarpy Blorb\.plastic\plastic.wktree
+        projectPath: .plastic\plastic.wktree
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: .plastic\plastic.workspace
+        fullPath: C:\Users\user\Flarpy Blorb\.plastic\plastic.workspace
+        projectPath: .plastic\plastic.workspace
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Assets\unitytut-birdbody.png
+        fullPath: C:\Users\user\Flarpy Blorb\Assets\unitytut-birdbody.png
+        projectPath: Assets\unitytut-birdbody.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\unitytut-birdbody.png.meta
+        fullPath: C:\Users\user\Flarpy Blorb\Assets\unitytut-birdbody.png.meta
+        projectPath: Assets\unitytut-birdbody.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\unitytut-pipe.png
+        fullPath: C:\Users\user\Flarpy Blorb\Assets\unitytut-pipe.png
+        projectPath: Assets\unitytut-pipe.png
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\unitytut-pipe.png.meta
+        fullPath: C:\Users\user\Flarpy Blorb\Assets\unitytut-pipe.png.meta
+        projectPath: Assets\unitytut-pipe.png.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2021.dwlt
+        fullPath: C:\Users\user\Flarpy Blorb\UserSettings\Layouts\default-2021.dwlt
+        projectPath: UserSettings\Layouts\default-2021.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
     - commitID: 80497b84befb3a039d9827b729dcde86d32e467e
       mergeA: 
       mergeB: 
@@ -850,14 +882,74 @@ MonoBehaviour:
         workTreeStatus: 0
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2025-07-28T02:01:24.754+03:00
+      updatedTimeString: 2025-07-28T06:08:58.502+03:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2025-07-28T02:00:55.678+03:00
+      updatedTimeString: 2025-07-28T06:08:58.495+03:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
       entries:
+      - commitID: 4eb7229abafdb3b4d30bbed706fd294238ad38c9
+        mergeA: 
+        mergeB: 
+        authorName: PochkaVirta
+        authorEmail: cyberdog771@gmail.com
+        commitEmail: cyberdog771@gmail.com
+        commitName: PochkaVirta
+        summary: Add bird
+        description: 
+        timeString: 2025-07-28T06:08:44.000+03:00
+        commitTimeString: 2025-07-28T06:08:44.000+03:00
+        changes:
+        - path: .plastic\plastic.selector
+          fullPath: C:\Users\user\Flarpy Blorb\.plastic\plastic.selector
+          projectPath: .plastic\plastic.selector
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: .plastic\plastic.wktree
+          fullPath: C:\Users\user\Flarpy Blorb\.plastic\plastic.wktree
+          projectPath: .plastic\plastic.wktree
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: .plastic\plastic.workspace
+          fullPath: C:\Users\user\Flarpy Blorb\.plastic\plastic.workspace
+          projectPath: .plastic\plastic.workspace
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Assets\unitytut-birdbody.png
+          fullPath: C:\Users\user\Flarpy Blorb\Assets\unitytut-birdbody.png
+          projectPath: Assets\unitytut-birdbody.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\unitytut-birdbody.png.meta
+          fullPath: C:\Users\user\Flarpy Blorb\Assets\unitytut-birdbody.png.meta
+          projectPath: Assets\unitytut-birdbody.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\unitytut-pipe.png
+          fullPath: C:\Users\user\Flarpy Blorb\Assets\unitytut-pipe.png
+          projectPath: Assets\unitytut-pipe.png
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\unitytut-pipe.png.meta
+          fullPath: C:\Users\user\Flarpy Blorb\Assets\unitytut-pipe.png.meta
+          projectPath: Assets\unitytut-pipe.png.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2021.dwlt
+          fullPath: C:\Users\user\Flarpy Blorb\UserSettings\Layouts\default-2021.dwlt
+          projectPath: UserSettings\Layouts\default-2021.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
       - commitID: 80497b84befb3a039d9827b729dcde86d32e467e
         mergeA: 
         mergeB: 
@@ -1179,7 +1271,7 @@ MonoBehaviour:
       installSettingsHidden: 0
     hasRemote: 1
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2025-07-28T02:05:39.928+03:00
+      updatedTimeString: 2025-07-28T06:08:58.507+03:00
       cacheType: 1
     newRepositoryRemoteUrl: https://github.com/pochkavirta/Flarpy-Blorb.git
     repositoryRemoteName: origin
@@ -1192,7 +1284,7 @@ MonoBehaviour:
       newGitEmail: cyberdog771@gmail.com
       needsSaving: 0
       lastCheckUserChangedEvent:
-        updatedTimeString: 2025-07-28T02:05:37.754+03:00
+        updatedTimeString: 2025-07-28T06:09:41.255+03:00
         cacheType: 8
       configSettingsHidden: 0
     repositorySettingsHidden: 0
@@ -1225,22 +1317,16 @@ MonoBehaviour:
         gitFileStatus: 0
         lockedAt: 1 Jan 0001, 03:00
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2025-07-28T02:00:18.529+03:00
+      updatedTimeString: 2025-07-28T06:08:58.507+03:00
       cacheType: 1
     lastLocksChangedEvent:
       updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 7
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2025-07-28T02:00:55.673+03:00
+      updatedTimeString: 2025-07-28T06:08:46.745+03:00
       cacheType: 6
     lockedFiles: []
-    gitStatusEntries:
-    - path: .plastic\plastic.wktree
-      fullPath: C:\Users\user\Flarpy Blorb\.plastic\plastic.wktree
-      projectPath: .plastic\plastic.wktree
-      originalPath: 
-      indexStatus: 0
-      workTreeStatus: 3
+    gitStatusEntries: []
     currentUsername: 
     unlockFileMenuContent:
       m_Text: Release Lock
@@ -1256,7 +1342,7 @@ MonoBehaviour:
   currentRemoteUrl: https://github.com/pochkavirta/Flarpy-Blorb.git
   statusAhead: 0
   statusBehind: 0
-  hasItemsToCommit: 1
+  hasItemsToCommit: 0
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: master
@@ -1267,13 +1353,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2025-07-28T02:05:39.928+03:00
+    updatedTimeString: 2025-07-28T06:08:58.507+03:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2025-07-28T02:05:39.949+03:00
+    updatedTimeString: 2025-07-28T06:09:53.648+03:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2025-07-28T02:05:39.941+03:00
+    updatedTimeString: 2025-07-28T06:09:53.640+03:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -1316,8 +1402,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1920
-    y: 664
+    x: 0
+    y: 654
     width: 1464
     height: 385
   m_ViewDataDictionary: {fileID: 0}
@@ -1346,8 +1432,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1920
-    y: 664
+    x: 0
+    y: 654
     width: 1464
     height: 385
   m_ViewDataDictionary: {fileID: 0}
@@ -1380,9 +1466,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 865d0000
-    m_LastClickedID: 23942
-    m_ExpandedIDs: 00000000f05f0000
+    m_SelectedIDs: f05f0000
+    m_LastClickedID: 24560
+    m_ExpandedIDs: 00000000f05f000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1437,7 +1523,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1486,8 +1572,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -455
-    y: 83
+    x: 1465
+    y: 73
     width: 454
     height: 966
   m_ViewDataDictionary: {fileID: 0}
@@ -1528,8 +1614,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1920
-    y: 83
+    x: 0
+    y: 73
     width: 449
     height: 560
   m_ViewDataDictionary: {fileID: 0}
@@ -1540,7 +1626,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: c0730000
       m_LastClickedID: 0
       m_ExpandedIDs: 2cfbffff
       m_RenameOverlay:
@@ -1558,7 +1644,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 4}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -1586,8 +1672,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: -1470
-    y: 83
+    x: 450
+    y: 73
     width: 1013
     height: 560
   m_ViewDataDictionary: {fileID: 0}
@@ -1847,9 +1933,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 1.3403401, y: 0.18534604, z: 0.017873915}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 1.3403401, y: 0.18534604, z: 0.017873915}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1900,9 +1986,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10
+    m_Target: 8.212593
     speed: 2
-    m_Value: 10
+    m_Value: 8.212593
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1947,10 +2033,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 507
-    y: 94
-    width: 1532
-    height: 790
+    x: 450
+    y: 73
+    width: 1013
+    height: 560
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1962,25 +2048,25 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1532, y: 769}
+  m_TargetSize: {x: 1920, y: 1080}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
-  m_RenderIMGUI: 0
+  m_RenderIMGUI: 1
   m_EnterPlayModeBehavior: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -766
-    m_HBaseRangeMax: 766
-    m_VBaseRangeMin: -384.5
-    m_VBaseRangeMax: 384.5
+    m_HBaseRangeMin: -960
+    m_HBaseRangeMax: 960
+    m_VBaseRangeMin: -540
+    m_VBaseRangeMax: 540
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1998,23 +2084,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1532
-      height: 769
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 766, y: 384.5}
+      width: 1013
+      height: 539
+    m_Scale: {x: 0.49907407, y: 0.49907407}
+    m_Translation: {x: 506.5, y: 269.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -766
-      y: -384.5
-      width: 1532
-      height: 769
+      x: -1014.8794
+      y: -540
+      width: 2029.7588
+      height: 1080
     m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1532, y: 790}
+  m_defaultScale: 0.49907407
+  m_LastWindowPixelSize: {x: 1013, y: 560}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
