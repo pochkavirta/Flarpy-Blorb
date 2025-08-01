@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Git for Unity
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 105
+  controlID: 75
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: Window
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -68,14 +68,14 @@ MonoBehaviour:
     y: 0
     width: 455
     height: 987
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 16}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 16}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -95,8 +95,8 @@ MonoBehaviour:
     y: 0
     width: 450
     height: 581
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 106
+  controlID: 80
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 107
+  controlID: 81
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 1015
     height: 581
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 18}
@@ -310,7 +310,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 41302
+  m_LastSelectedObjectID: 36124
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -347,7 +347,7 @@ MonoBehaviour:
   currentTrackingStatusHasUpdate: 0
   currentStatusEntriesHasUpdate: 0
   repositoryProgressHasUpdate: 0
-  appManagerProgressHasUpdate: 1
+  appManagerProgressHasUpdate: 0
   changeTab: 3
   activeTab: 3
   initProjectView:
@@ -520,8 +520,8 @@ MonoBehaviour:
       tracking: '[None]'
   changesView:
     currentBranchHasUpdate: 0
-    currentStatusEntriesHasUpdate: 1
-    currentLocksHasUpdate: 1
+    currentStatusEntriesHasUpdate: 0
+    currentLocksHasUpdate: 0
     commitBody: 
     commitMessage: 
     currentBranch: master
@@ -583,10 +583,10 @@ MonoBehaviour:
     gitStatusEntries: []
     changedFilesText: No changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2025-08-01T09:25:16.742+03:00
+      updatedTimeString: 2025-08-01T11:42:25.848+03:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2025-08-01T09:58:05.082+03:00
+      updatedTimeString: 2025-08-01T11:42:17.012+03:00
       cacheType: 6
     lastLocksChangedEvent:
       updatedTimeString: 0001-01-01T00:00:00.000+00:00
@@ -1926,13 +1926,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2025-08-01T09:25:16.742+03:00
+    updatedTimeString: 2025-08-01T11:42:25.848+03:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2025-08-01T09:35:22.903+03:00
+    updatedTimeString: 2025-08-01T11:42:25.813+03:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2025-08-01T09:35:22.887+03:00
+    updatedTimeString: 2025-08-01T11:42:17.012+03:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -2025,23 +2025,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\user\Flarpy Blorb
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: 12650000
-    m_LastClickedID: 25874
-    m_ExpandedIDs: 00000000126500001c6500005465000000ca9a3bffffff7f
+    m_SelectedIDs: 24650000
+    m_LastClickedID: 25892
+    m_ExpandedIDs: 000000001c65000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2069,7 +2069,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000012650000
+    m_ExpandedIDs: 000000001c650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2161,7 +2161,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 248
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -2199,20 +2199,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 76a10000
-      m_LastClickedID: 41334
-      m_ExpandedIDs: 1e78ffff5c78ffffd87dffff1e8dffffc493ffff3494ffffa094fffff694ffffc695ffff0896ffff2098ffff6698ffff709bffffc89bffff0a9effff0aa0ffff3aa0ffff74a0ffffaaa0ffffeaa0ffff32a2ffffc8a7ffff0aa8ffff98a8ffff86a9ffff80abffff0cadfffff0adffff1caeffff48aeffff7caeffffacaeffff54afffffd6affffff4b0ffffecb2ffff2eb3ffff8cb3ffffccb3ffff08b4ffff4cb4ffff7cb4ffffbab4ffffeab4ffff32b5ffff62b5ffff94b5ffffccb5ffff02b6ffff3cb6ffff7eb6ffff26fbffff8e820000f4830000348500005c8500007c850000ba860000068700002e8700004e870000e4870000c88a0000f08a0000108b00009a8b0000168c00003e8c00005e8c0000f08c0000aa8d0000d48d000008930000309300006a9300009a93000094940000b4950000169600003e9600007e960000d8960000009700005497000084970000b29a0000da9a0000de9a0000769e0000a69e00002ea1000056a1000076a10000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: c6a8ffff00a9ffffd0aaffffe0aaffff3aabffff78abffff0cd3ffff46d3ffff12d5ffff1ed5ffffd8e9ffff16ecffff48ecffff26fbffffaa630000d2630000b87f0000ac810000f08c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Text High Score
-        m_OriginalName: Text High Score
+        m_Name: Clouds
+        m_OriginalName: Clouds
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -29500
+        m_UserData: 36098
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -2506,9 +2506,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1067.8376, y: 471.0267, z: -6.2168055}
+    m_Target: {x: 1099.6687, y: 559.75055, z: -358.64313}
     speed: 2
-    m_Value: {x: 1067.8376, y: 471.0267, z: -6.2168055}
+    m_Value: {x: 1099.6687, y: 559.75055, z: -358.64313}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2559,9 +2559,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 724.757
+    m_Target: 601.6245
     speed: 2
-    m_Value: 724.757
+    m_Value: 601.6245
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -2579,7 +2579,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.10836563, y: 0.07597295, z: -0.008305996, w: 0.99117047}
+  m_LastSceneViewRotation: {x: -0.11670538, y: 0.5998901, z: -0.08901432, w: -0.78650594}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 

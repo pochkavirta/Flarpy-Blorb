@@ -49,4 +49,9 @@ public class LogicScript : MonoBehaviour
             highScoreText.text = "High Score: " + playerScore.ToString();
         }
     }
+
+    public void exitGame()
+    {
+        Application.Quit();
+    }
 }
