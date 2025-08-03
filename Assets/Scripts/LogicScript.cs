@@ -8,10 +8,8 @@ using TMPro;
 public class LogicScript : MonoBehaviour
 {
     public int playerScore;
-
     public int highScore;
     public TextMeshProUGUI scoreText;
-
     public TextMeshProUGUI highScoreText;
     public GameObject gameOverScreen;
     public BirdScript bird;
